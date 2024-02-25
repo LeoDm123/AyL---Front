@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+
+.love-light-regular {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.counter-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter-subcontainer {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.counter-number {
+  background-color: #717264;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-icon {
+  color: #4f5046;
+  margin-top: 40px;
+  width: 80px;
+  height: auto;
+}
+
+.button {
+  background-color: #717264 !important;
+  margin: 20px !important;
+}
+
+.location-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.date-hour-container {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 80%;
+  height: 100px;
+  padding: 20px;
+}
+
+.main-img-grid {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #6a6a6a;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+}
