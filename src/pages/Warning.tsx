@@ -8,7 +8,6 @@ const Warning = () => {
         <Grid
           sx={{
             width: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
             color: "white",
             padding: 1,
             marginTop: 3,
@@ -17,11 +16,11 @@ const Warning = () => {
           <Typography
             variant="h4"
             align="center"
-            style={{ fontFamily: "'Love Light', cursive" }}
+            style={{ fontFamily: "'Love Light', cursive", color: "black" }}
           >
             ¡Abel y Lou!
           </Typography>
-          <Typography variant="body1" align="center">
+          <Typography variant="body1" align="center" style={{ color: "black" }}>
             ¡Para una mejor experiencia abre esta aplicación en un dispositivo
             móbil!
           </Typography>
