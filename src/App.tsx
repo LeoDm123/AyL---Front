@@ -1,9 +1,30 @@
+import { useEffect, useState } from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Warning from "./pages/Warning";
 
 function App() {
-  const isMobile = window.matchMedia("max-width: 768px").matches;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    const mobileKeywords = [
+      "Android",
+      "webOS",
+      "iPhone",
+      "iPad",
+      "iPod",
+      "BlackBerry",
+      "Windows Phone",
+    ];
+    const isMobileUserAgent = mobileKeywords.some((keyword) =>
+      userAgent.includes(keyword)
+    );
+
+    console.log(userAgent);
+    setIsMobile(isMobileUserAgent);
+  }, []);
+
   console.log(isMobile);
 
   return (

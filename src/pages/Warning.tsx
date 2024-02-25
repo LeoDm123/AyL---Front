@@ -6,7 +6,7 @@ const Warning = () => {
   return (
     <Container sx={{ padding: 0 }}>
       <Grid sx={{ padding: 0, margin: 0 }}>
-        <img className="main-img" src={Photo} />
+        <img className="warning-img" src={Photo} />
         <Grid
           sx={{
             position: "absolute",
@@ -19,13 +19,13 @@ const Warning = () => {
           }}
         >
           <Typography
-            variant="h2"
+            variant="h4"
             align="center"
             style={{ fontFamily: "'Love Light', cursive" }}
           >
             ¡Abel y Lou!
           </Typography>
-          <Typography variant="h6" align="center">
+          <Typography variant="body1" align="center">
             ¡Abre esta aplicación en un dispositivo móbil!
           </Typography>
         </Grid>
