@@ -10,9 +10,9 @@ const Warning = () => {
             position: "absolute",
             top: "25%",
             width: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
             color: "white",
-            padding: 0,
+            padding: 1,
             margin: 0,
           }}
         >

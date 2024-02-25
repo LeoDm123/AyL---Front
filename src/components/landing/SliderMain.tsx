@@ -14,7 +14,7 @@ const SliderMain = () => {
             width: "100%",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             color: "white",
-            padding: 0,
+            padding: 1,
             margin: 0,
           }}
         >
