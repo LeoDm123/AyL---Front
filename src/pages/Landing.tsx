@@ -9,6 +9,7 @@ import Gifts from "../components/landing/Gifts";
 import Bus from "../components/landing/Bus";
 import Assistance from "../components/landing/Assistance";
 import Closing from "../components/landing/Closing";
+import Playlist from "../components/landing/Playlist";
 
 const Landing = () => {
   return (
@@ -19,6 +20,8 @@ const Landing = () => {
       <Location />
       <DividerTitle />
       <Dresscode />
+      <DividerTitle />
+      <Playlist />
       <DividerTitle />
       <Gifts />
       <DividerTitle />
