@@ -30,7 +30,7 @@ body {
 }
 
 .counter-number {
-  background-color: #717264;
+  background-color: #868b6b;
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -47,7 +47,7 @@ body {
 }
 
 .button {
-  background-color: #717264 !important;
+  background-color: #868b6b !important;
   margin: 20px !important;
 }
 
