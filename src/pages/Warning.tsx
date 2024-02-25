@@ -7,13 +7,11 @@ const Warning = () => {
       <Grid sx={{ padding: 0, margin: 0 }}>
         <Grid
           sx={{
-            position: "absolute",
-            top: "25%",
             width: "100%",
             backgroundColor: "rgba(0, 0, 0, 0.7)",
             color: "white",
             padding: 1,
-            margin: 0,
+            marginTop: 3,
           }}
         >
           <Typography
