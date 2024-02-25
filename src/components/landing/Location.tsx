@@ -36,7 +36,7 @@ const Location = () => {
             flexItem
           />
           <Typography variant="h5" align="center" style={{ color: "#4f5046" }}>
-            18:00 h.
+            09:00 hs.
           </Typography>
         </Grid>
         <Typography variant="body2" style={{ color: "#717264" }}>
