@@ -1,12 +1,10 @@
 import "../css/App.css";
 import { Grid, Typography, Container } from "@mui/material";
-import Photo from "../assets/imgs/AbelyLu.jpg";
 
 const Warning = () => {
   return (
     <Container sx={{ padding: 0 }}>
       <Grid sx={{ padding: 0, margin: 0 }}>
-        <img className="warning-img" src={Photo} />
         <Grid
           sx={{
             position: "absolute",
@@ -26,7 +24,8 @@ const Warning = () => {
             ¡Abel y Lou!
           </Typography>
           <Typography variant="body1" align="center">
-            ¡Abre esta aplicación en un dispositivo móbil!
+            ¡Para una mejor experiencia abre esta aplicación en un dispositivo
+            móbil!
           </Typography>
         </Grid>
       </Grid>
