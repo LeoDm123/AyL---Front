@@ -51,6 +51,12 @@ body {
   margin: 20px !important;
 }
 
+.button-icon {
+  color: #4f5046;
+  width: 20px;
+  height: auto;
+}
+
 .location-container {
   display: flex !important;
   flex-direction: column !important;

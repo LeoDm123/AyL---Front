@@ -1,6 +1,7 @@
 import { Grid, Typography, Container, Button } from "@mui/material";
 import "../../css/App.css";
 import EventIcon from "../../assets/icons/playlist.png";
+import SpotifyIcon from "../../assets/icons/spotify.png";
 
 const Playlist = () => {
   return (
@@ -23,8 +24,16 @@ const Playlist = () => {
         >
           ¡Ayudanos a armar la playlist de nuestro casamiento!
         </Typography>
-        <Button variant="contained" className="button">
-          Recomendar Música
+        <Button
+          variant="contained"
+          className="button"
+          href="https://open.spotify.com/playlist/4jlkHPzRF8atAvePKjUsmY?si=e2fb1460c3a44bc8"
+          target="blank"
+          startIcon={
+            <img src={SpotifyIcon} alt="Event Icon" className="button-icon" />
+          }
+        >
+          Playlist
         </Button>
       </Grid>
     </Container>

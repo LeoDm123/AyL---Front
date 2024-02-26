@@ -46,7 +46,12 @@ const Location = () => {
           San Miguel de Tucumán - Tucumán
         </Typography>
         <Grid>
-          <Button variant="contained" className="button">
+          <Button
+            variant="contained"
+            className="button"
+            href="https://maps.app.goo.gl/s7X89HSXujaG6zzV7"
+            target="blank"
+          >
             Ver Ubicación
           </Button>
         </Grid>
