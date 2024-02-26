@@ -30,7 +30,7 @@ const Gifts = () => {
           Lo más importante es tu presencia, <br /> pero si quieres hacernos un
           regalo,
           <br />
-          aqui tienes nuestros datos.
+          aquí tienes nuestros datos.
         </Typography>
         <Button variant="contained" className="button" onClick={handleOpen}>
           Datos Bancarios

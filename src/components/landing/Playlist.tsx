@@ -27,7 +27,7 @@ const Playlist = () => {
         <Button
           variant="contained"
           className="button"
-          href="https://open.spotify.com/playlist/4jlkHPzRF8atAvePKjUsmY?si=e2fb1460c3a44bc8"
+          href="https://open.spotify.com/playlist/4jlkHPzRF8atAvePKjUsmY?si=5008687865764fb5&pt=ff6ea19215b5e25d58d167563c360bed"
           target="blank"
           startIcon={
             <img src={SpotifyIcon} alt="Event Icon" className="button-icon" />
