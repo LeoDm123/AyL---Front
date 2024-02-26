@@ -1,9 +1,11 @@
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
 import CloseIcon from "@mui/icons-material/Close";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 const style = {
   position: "absolute" as "absolute",
@@ -23,6 +25,14 @@ interface BankDataProps {
 }
 
 const BankData: React.FC<BankDataProps> = ({ open, handleClose }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+
   return (
     <div>
       <Modal open={open} onClose={handleClose}>
@@ -40,18 +50,60 @@ const BankData: React.FC<BankDataProps> = ({ open, handleClose }) => {
               <CloseIcon />
             </IconButton>
           </Grid>
-          <Typography sx={{ mt: 2 }} style={{ color: "#4f5046" }}>
+          <Typography style={{ color: "#4f5046" }} sx={{ mt: 2 }}>
             Banco Galicia
           </Typography>
-          <Typography sx={{ mt: 2 }} style={{ color: "#4f5046" }}>
-            CBU: 0070358930004003890391
-          </Typography>
-          <Typography sx={{ mt: 2 }} style={{ color: "#4f5046" }}>
-            Alias: ABEL.ROBRA.PYTHON
-          </Typography>
-          <Typography sx={{ mt: 2 }} style={{ color: "#4f5046" }}>
-            Binance User ID: 455358805 (Crypto)
-          </Typography>
+          <Grid
+            container
+            justifyContent="space-between"
+            alignItems="center"
+            sx={{ mt: 2 }}
+          >
+            <Typography style={{ color: "#4f5046" }}>
+              CBU: 0070358930004003890391
+            </Typography>
+            <IconButton
+              onClick={() => handleCopy("0070358930004003890391")}
+              disabled={copied}
+              style={{ color: "#4f5046" }}
+            >
+              <ContentCopyIcon />
+            </IconButton>
+          </Grid>
+          <Grid
+            container
+            justifyContent="space-between"
+            alignItems="center"
+            sx={{ mt: 2 }}
+          >
+            <Typography style={{ color: "#4f5046" }}>
+              Alias: ABEL.ROBRA.PYTHON
+            </Typography>
+            <IconButton
+              onClick={() => handleCopy("ABEL.ROBRA.PYTHON")}
+              disabled={copied}
+              style={{ color: "#4f5046" }}
+            >
+              <ContentCopyIcon />
+            </IconButton>
+          </Grid>
+          <Grid
+            container
+            justifyContent="space-between"
+            alignItems="center"
+            sx={{ mt: 2 }}
+          >
+            <Typography style={{ color: "#4f5046" }}>
+              Binance User ID: 455358805
+            </Typography>
+            <IconButton
+              onClick={() => handleCopy("455358805")}
+              disabled={copied}
+              style={{ color: "#4f5046" }}
+            >
+              <ContentCopyIcon />
+            </IconButton>
+          </Grid>
         </Box>
       </Modal>
     </div>
