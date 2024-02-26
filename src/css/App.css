@@ -90,3 +90,9 @@ body {
   width: 100%;
   height: auto;
 }
+
+.dress-img {
+  width: auto;
+  height: 250px;
+  border-radius: 5px;
+}
