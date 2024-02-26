@@ -21,11 +21,8 @@ function App() {
       userAgent.includes(keyword)
     );
 
-    console.log(userAgent);
     setIsMobile(isMobileUserAgent);
   }, []);
-
-  console.log(isMobile);
 
   return (
     <HashRouter>
