@@ -1,8 +1,14 @@
+import * as React from "react";
 import { Grid, Typography, Container, Button } from "@mui/material";
 import "../../css/App.css";
 import EventIcon from "../../assets/icons/gift.png";
+import BankData from "./BankData";
 
 const Gifts = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <Container sx={{ padding: 2 }}>
       <Grid className="location-container">
@@ -26,9 +32,10 @@ const Gifts = () => {
           <br />
           aqui tienes nuestros datos.
         </Typography>
-        <Button variant="contained" className="button">
+        <Button variant="contained" className="button" onClick={handleOpen}>
           Datos Bancarios
         </Button>
+        <BankData open={open} handleClose={handleClose} />
       </Grid>
     </Container>
   );
