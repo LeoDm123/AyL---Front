@@ -10,6 +10,7 @@ import Bus from "../components/landing/Bus";
 import Assistance from "../components/landing/Assistance";
 import Closing from "../components/landing/Closing";
 import Playlist from "../components/landing/Playlist";
+import Menu from "../components/landing/Menu";
 
 const Landing = () => {
   return (
@@ -26,6 +27,7 @@ const Landing = () => {
       <Gifts />
       <DividerTitle />
       <Bus />
+      <Menu />
       <Assistance />
       <Closing />
     </Container>

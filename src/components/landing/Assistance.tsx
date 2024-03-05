@@ -12,6 +12,7 @@ import {
   SelectChangeEvent,
 } from "@mui/material";
 import "../../css/App.css";
+import EventIcon from "../../assets/icons/assistance.png";
 
 const Assistance = () => {
   const [name, setName] = React.useState("");
@@ -35,6 +36,7 @@ const Assistance = () => {
   return (
     <Container sx={{ padding: 2 }}>
       <Grid className="location-container">
+        <img src={EventIcon} alt="Event Icon" className="event-icon" />
         <Typography
           variant="h5"
           align="center"
